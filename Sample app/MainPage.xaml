@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Sample_app.MainPage"
+             Title="">
+   
+        <VerticalStackLayout
+            Padding="50,100"
+            Spacing="25">
+
+                <Image
+                Source="usericon2.png"
+                HeightRequest="150"
+                Aspect="AspectFit"
+                />
+
+
+                <Label
+                Text="USER LOGIN" 
+                FontSize="20"
+                Style="{StaticResource Headline}"
+                />
+
+                <Entry 
+                    x:Name="UsernameEntry"
+                    Placeholder="Enter Username" />
+
+                <Entry 
+                x:Name="PasswordEntry"
+                Placeholder="Enter Password"
+                IsPassword="True"
+                />
+
+                <Button
+                Text="Log in " 
+                Clicked="OnLoginClicked"
+                CornerRadius="20"
+                FontAttributes="Bold"
+                BackgroundColor="#0077B6"
+                HorizontalOptions="Fill"  
+                />
+
+                <Label 
+                Text="Don't have an account ?" 
+                HorizontalOptions="Center"
+                Padding="0,90,0,0"
+                />
+
+                <Button
+                Text="SIGN UP" 
+                FontAttributes="Bold"
+                FontSize="10"
+                CornerRadius="20"
+                BackgroundColor="#0077B6"
+                HorizontalOptions="Center"  
+                />  
+            
+        </VerticalStackLayout>
+  
+</ContentPage>
+
